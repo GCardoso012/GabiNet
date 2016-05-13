@@ -1,4 +1,4 @@
-<div class="container-fluid" ng-init="consultar()">
+<div class="container-fluid" id="render">
     <form method="get" class="form-horizontal">
         <fieldset>
                 <legend>Atividade</legend>
@@ -32,6 +32,9 @@
                         <textarea class="form-control" rows="10" id="ementa" ng-model="atividade.ementa" readonly></textarea>
                         <span class="help-block"></span>
                     </div>
+                </div>
+                <div>
+                    <button ng-click="gerarPdf()">PDF</button>
                 </div>
         </fieldset>
     </form>
